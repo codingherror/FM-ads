@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advertiser Form - Forum Musculo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Advertiser Inquiry</h1>
+    <form id="adForm">
+      <input type="text" name="business" placeholder="Business Name" required>
+      <input type="text" name="contact" placeholder="Contact Person" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="telegram" placeholder="Your Telegram Username (@...)" pattern="^@\w{5,}$" required>
+      <input type="number" name="budget" placeholder="Monthly Ad Budget (€)" required>
+      <textarea name="goals" placeholder="Describe your advertising goals" required></textarea>
+      <textarea name="placements" placeholder="Current ad platforms you use" required></textarea>
+      <input type="text" name="captcha" placeholder="What is 5 + 3?" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="status"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
