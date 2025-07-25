@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advertiser Form - Forum Musculo</title>
+  <title>Advertiser Form – Forum Musculo</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>Advertiser Inquiry</h1>
+  <div class="form-wrapper">
+    <div class="branding">
+      <h1>Advertiser Inquiry</h1>
+      <p class="subtitle">Promote your brand to thousands of loyal fitness enthusiasts on <strong>ForoMusculo.com</strong></p>
+    </div>
     <form id="adForm">
       <input type="text" name="business" placeholder="Business Name" required>
       <input type="text" name="contact" placeholder="Contact Person" required>
@@ -19,8 +22,11 @@
       <textarea name="placements" placeholder="Current ad platforms you use" required></textarea>
       <input type="text" name="captcha" placeholder="What is 5 + 3?" required>
       <button type="submit">Submit</button>
+      <p id="status" class="status"></p>
     </form>
-    <p id="status"></p>
+    <footer>
+      <p>© 2025 <a href="https://www.foromusculo.com" target="_blank">ForoMusculo.com</a></p>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
